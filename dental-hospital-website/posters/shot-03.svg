@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Small porcelain service forms arranged on a clinic floor">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#faf9f5"/><stop offset="1" stop-color="#e7ece6"/></linearGradient><radialGradient id="form" cx=".35" cy=".15"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#dfe7e1"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="800" cy="775" rx="670" ry="95" fill="#536a61" opacity=".15" filter="url(#shadow)"/>
+  <g fill="#fffefa" stroke="#d5ded8" stroke-width="3">
+    <ellipse cx="180" cy="690" rx="95" ry="31"/><ellipse cx="390" cy="635" rx="95" ry="31"/><ellipse cx="595" cy="600" rx="95" ry="31"/><ellipse cx="800" cy="585" rx="95" ry="31"/><ellipse cx="1005" cy="600" rx="95" ry="31"/><ellipse cx="1210" cy="635" rx="95" ry="31"/><ellipse cx="1420" cy="690" rx="95" ry="31"/>
+  </g>
+  <g fill="url(#form)" stroke="#d7dfd9" stroke-width="3">
+    <path d="M145 657 Q130 560 181 520 Q233 558 217 657Z"/><circle cx="390" cy="565" r="54"/><path d="M546 570 Q531 475 596 444 Q656 484 642 570Z"/><circle cx="800" cy="527" r="59"/><path d="M954 570 Q940 475 1006 444 Q1065 484 1052 570Z"/><circle cx="1210" cy="565" r="54"/><path d="M1382 657 Q1367 560 1421 520 Q1470 558 1455 657Z"/>
+  </g>
+  <g fill="none" stroke="#0f5c5c" stroke-width="8"><circle cx="390" cy="565" r="76"/><circle cx="800" cy="527" r="79"/><circle cx="1210" cy="565" r="76"/></g>
+  <text x="800" y="890" text-anchor="middle" fill="#173c3d" font-family="Georgia,serif" font-size="49">Care for every kind of smile</text>
+</svg>

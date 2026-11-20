@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.settings-page { max-width: 760px; }
+.settings-preview { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border, #e5e7eb); border-radius: 10px; }
+.settings-preview b, .settings-preview small { display: block; }
+.settings-preview small { margin-top: 4px; color: var(--muted, #667085); }
+.settings-swatch { width: 74px; height: 46px; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 0 5px 14px #12201b22; background: linear-gradient(135deg, #fffefa, #e1e4d9); }
+.settings-swatch.midnight { background: linear-gradient(135deg, #39473f, #202923); }
+.settings-swatch.sage { background: linear-gradient(135deg, #e9f1e7, #aebfae); }

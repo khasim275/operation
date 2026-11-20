@@ -1,0 +1,234 @@
+.patient-registration-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.patient-registration-form legend {
+  color: var(--text-strong, #123e42);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.patient-card-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.patient-card-form-grid label,
+.card-reissue label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.patient-card-form-grid .span-2,
+.span-2 {
+  grid-column: span 2;
+}
+
+.consent-list,
+.card-whatsapp-actions,
+.card-reissue {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.25rem 0;
+}
+
+.consent-check {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.7rem;
+  line-height: 1.5;
+}
+
+.consent-check input {
+  flex: 0 0 auto;
+  margin-top: 0.25rem;
+  min-height: 1.15rem;
+  min-width: 1.15rem;
+}
+
+.duplicate-prompt {
+  background: var(--surface-raised, #fff);
+  border: 2px solid #b86f25;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.duplicate-match {
+  align-items: center;
+  border-top: 1px solid var(--border, #d6e1de);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.duplicate-match span,
+.duplicate-match small {
+  display: block;
+}
+
+.duplicate-match small {
+  color: var(--text-muted, #566e6e);
+  margin-top: 0.2rem;
+}
+
+.patient-card-success {
+  max-width: 980px;
+}
+
+.patient-card-preview {
+  background: #f7f5ef;
+  border: 1px solid var(--border, #d6e1de);
+  border-radius: 1rem;
+  display: block;
+  height: auto;
+  margin: 1.25rem auto;
+  max-width: min(100%, 840px);
+}
+
+.card-actions {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.patient-file {
+  display: grid;
+  gap: 1rem;
+}
+
+.patient-file pre {
+  font: inherit;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.patient-file-header {
+  align-items: center;
+  background: var(--surface-raised, #fff);
+  border: 1px solid var(--border, #d6e1de);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.patient-file-header h2 {
+  margin: 0.25rem 0;
+}
+
+.patient-file-header-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.op-id-large {
+  color: var(--text-strong, #123e42);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.patient-file-notice {
+  background: #fff3d8;
+  border: 1px solid #8e591b;
+  border-radius: 0.75rem;
+  color: #472b09;
+  padding: 0.85rem 1rem;
+}
+
+.patient-file-tabs {
+  border-bottom: 1px solid var(--border, #d6e1de);
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.45rem;
+}
+
+.patient-file-tabs button {
+  background: transparent;
+  border: 0;
+  border-radius: 0.6rem;
+  color: var(--text-muted, #566e6e);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font: inherit;
+  min-height: 44px;
+  padding: 0.6rem 0.8rem;
+}
+
+.patient-file-tabs button.active,
+.patient-file-tabs button[aria-current="page"] {
+  background: var(--brand-soft, #dcece7);
+  color: var(--text-strong, #123e42);
+  font-weight: 700;
+}
+
+.patient-file-panel {
+  min-width: 0;
+}
+
+.patient-file-panel .timeline-item {
+  margin: 1rem 0;
+}
+
+.patient-scanner-dialog {
+  max-width: 560px;
+}
+
+.patient-scanner-video {
+  background: #112f31;
+  border-radius: 0.75rem;
+  display: block;
+  max-height: 55vh;
+  min-height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.patient-scanner-fallback {
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+.patient-scanner-fallback video {
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .patient-card-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .patient-card-form-grid .span-2,
+  .span-2 {
+    grid-column: auto;
+  }
+
+  .patient-file-header,
+  .duplicate-match {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .patient-file-header-actions {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .patient-file,
+  .patient-file-tabs {
+    scroll-behavior: auto;
+  }
+}

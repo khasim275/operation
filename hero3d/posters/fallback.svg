@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Porcelain forms arranged as a gentle dental arch">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fbfaf6"/><stop offset="1" stop-color="#e9eee8"/></linearGradient>
+    <radialGradient id="ceramic" cx=".35" cy=".2"><stop stop-color="#fffefa"/><stop offset=".7" stop-color="#f2f1e9"/><stop offset="1" stop-color="#d9e0db"/></radialGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="820" cy="610" rx="520" ry="155" fill="#71847d" opacity=".16" filter="url(#shadow)"/>
+  <path d="M340 580 Q800 120 1260 580" fill="none" stroke="#0f5c5c" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <g fill="url(#ceramic)" stroke="#d4ddd7" stroke-width="3">
+    <rect x="330" y="525" width="74" height="128" rx="28" transform="rotate(-49 367 589)"/>
+    <rect x="402" y="432" width="78" height="133" rx="29" transform="rotate(-40 441 498)"/>
+    <rect x="493" y="353" width="82" height="137" rx="30" transform="rotate(-31 534 421)"/>
+    <rect x="595" y="294" width="84" height="142" rx="31" transform="rotate(-20 637 365)"/>
+    <rect x="706" y="265" width="86" height="145" rx="32" transform="rotate(-8 749 337)"/>
+    <rect x="814" y="265" width="86" height="145" rx="32" transform="rotate(8 857 337)"/>
+    <rect x="923" y="294" width="84" height="142" rx="31" transform="rotate(20 965 365)"/>
+    <rect x="1026" y="353" width="82" height="137" rx="30" transform="rotate(31 1067 421)"/>
+    <rect x="1118" y="432" width="78" height="133" rx="29" transform="rotate(40 1157 498)"/>
+    <rect x="1196" y="525" width="74" height="128" rx="28" transform="rotate(49 1233 589)"/>
+  </g>
+  <text x="800" y="840" text-anchor="middle" fill="#173c3d" font-family="Georgia,serif" font-size="54">Care that meets you where you are.</text>
+</svg>

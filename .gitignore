@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.vite/
+private_uploads/
+backups/
+frontend/node_modules/
+frontend/dist/
+floci/
+*.py[cod]
+
+# Local browser QA captures
+dental-hospital-website/debug*.png
+dental-hospital-website/qa-*.png
+
+.env

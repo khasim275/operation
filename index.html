@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F3">
+  <title>Harbour Dental — Care that meets you where you are</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-go="home" aria-label="Harbour Dental home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>Harbour <b>Dental</b></span>
+      </a>
+      <nav class="topnav" aria-label="Prototype pages">
+        <button class="nav-link active" data-go="home">Website</button>
+        <button class="nav-link" data-go="booking">Booking</button>
+        <button class="nav-link" data-go="wa-chat">WhatsApp</button>
+        <button class="nav-link" data-go="dashboard">Staff CRM</button>
+      </nav>
+      <div class="top-actions">
+        <span class="demo-label">DEMO</span>
+        <button class="icon-button" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle light/dark mode">◐</button>
+        <button class="menu-button icon-button" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <button data-go="home">Home</button><button data-go="service">Services</button><button data-go="doctor">Our team</button><button data-go="booking">Book an appointment</button><button data-go="wa-chat">WhatsApp conversation</button><button data-go="dashboard">Staff CRM demo</button>
+    </div>
+
+    <main>
+      <section class="screen active" id="screen-home" data-title="Website">
+        <div class="site-nav container">
+          <a class="brand compact" href="#" data-go="home"><span class="brand-mark">H</span><span>Harbour <b>Dental</b></span></a>
+          <nav aria-label="Main menu"><a href="#services">Services</a><a href="#how">Your visit</a><a href="#team">Our team</a><a href="#location">Location</a></nav>
+          <a class="phone-link" href="tel:+10000000000">Call (000) 000-0000</a>
+          <button class="button whatsapp small" data-go="booking">◉ <span>Book on WhatsApp</span></button>
+        </div>
+        <section class="hero container">
+          <div class="hero-copy">
+            <p class="eyebrow">Dental care in Harbour City</p>
+            <h1>A calmer way to care for your smile.</h1>
+            <p class="lead">We’ll listen to what you need, explain what to expect, and help you take the next step at your own pace.</p>
+            <div class="button-row"><button class="button whatsapp" data-go="booking">◉ Book on WhatsApp</button><a class="button warm" href="tel:+10000000000">Call now</a></div>
+            <p class="hours"><span class="status-dot"></span> Demo hours: Mon–Sat, 9am–6pm</p>
+          </div>
+          <div class="hero-art" role="img" aria-label="Illustration placeholder for a warm patient and clinician conversation">
+            <div class="sun"></div><div class="plant plant-one"></div><div class="person person-one"><i></i><b></b></div><div class="person person-two"><i></i><b></b></div>
+            <div class="art-caption">A little more listening.<br>A little less worry.</div>
+          </div>
+        </section>
+        <section class="section container" id="services">
+          <div class="section-heading"><div><p class="eyebrow">Thoughtful care</p><h2>Care for every stage of your smile</h2><p>Explore our services, or contact us and we’ll help you find the right place to start.</p></div><button class="text-button" data-go="service">View check-up details →</button></div>
+          <div class="service-grid">
+            <button class="service-card" data-go="service"><span class="service-icon">✳</span><b>Check-up</b><small>A chance to discuss your oral health and ask questions.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">✧</span><b>Cleaning</b><small>Professional cleaning to support your daily routine.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">＋</span><b>Fillings</b><small>Options for repairing a tooth affected by decay.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">◒</span><b>Root canal</b><small>Care to address infection inside a tooth.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">⌁</span><b>Braces</b><small>Ask about options for aligning your teeth.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">◇</span><b>Implants</b><small>Discuss whether implants may suit your needs.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">✦</span><b>Whitening</b><small>Talk with a clinician about suitability and options.</small></button>
+            <button class="service-card" data-go="service"><span class="service-icon">♡</span><b>Children’s dentistry</b><small>Friendly visits for children and their families.</small></button>
+          </div>
+        </section>
+        <section class="soft-section" id="how"><div class="container section"><p class="eyebrow">Your first step</p><h2>Getting started is simple</h2><div class="steps-grid"><article><span>01</span><h3>Say hi on WhatsApp</h3><p>Tell us what you’re looking for or ask a question.</p></article><article><span>02</span><h3>Choose a service</h3><p>We’ll help you find the right type of appointment.</p></article><article><span>03</span><h3>We call to confirm</h3><p>Our team will follow up to confirm the details.</p></article></div></div></section>
+        <section class="section container" id="team"><div class="section-heading"><div><p class="eyebrow">Here to help</p><h2>Meet your care team</h2><p>Get to know the clinicians who may care for you.</p></div><button class="text-button" data-go="doctor">Meet the clinician →</button></div>
+          <article class="doctor-card"><div class="doctor-avatar large-avatar" aria-hidden="true"><span>DR</span></div><div><h3>Dr. Alex Morgan</h3><p class="teal-text">General Dentist · DEMO PROFILE</p><p>Qualifications and registration details are examples for this prototype. Verify all credentials with the clinic before publishing.</p><button class="button primary" data-go="doctor">View profile</button></div></article>
+        </section>
+        <section class="soft-section"><div class="container hygiene"><div class="hygiene-mark">✳</div><div><p class="eyebrow">A prepared space</p><h2>Careful about cleanliness</h2><p>A clean, well-prepared environment is part of every visit. Our team follows the clinic’s hygiene and instrument-sterilisation procedures. Confirm this wording reflects your clinic’s practices before publishing.</p></div></div></section>
+        <section class="section container reviews"><p class="eyebrow">Patient experiences</p><h2>Experiences shared by our patients</h2><article class="placeholder-review"><span class="badge warning">PLACEHOLDER</span><p>Replace with a genuine, permissioned patient review before publication. No testimonial or rating is implied.</p></article></section>
+        <section class="soft-section"><div class="container section"><p class="eyebrow">A few helpful answers</p><h2>Frequently asked questions</h2><div class="faq-list">
+          <details><summary>I feel nervous about visiting. What can I do?</summary><p>Let us know when you contact us. We can talk through what to expect so you can decide on a next step that feels manageable.</p></details>
+          <details><summary>How do I book?</summary><p>Message us on WhatsApp or call (000) 000-0000. Our team can help confirm appointment details.</p></details>
+          <details><summary>Can I ask about costs?</summary><p>Yes. Contact the clinic to ask about costs for the service you’re considering. Confirm current fees before booking.</p></details>
+        </div></div></section>
+        <section class="section container location" id="location"><div><p class="eyebrow">Visit us</p><h2>Find us in Harbour City</h2><p>123 Example Street, Harbour City<br>Address and opening hours are placeholders for this demo.</p><p><b>Mon–Sat</b> · 9am–6pm (demo hours)</p><a class="text-button" href="#location">Get directions →</a></div><div class="map-placeholder"><span>⌖</span><b>Map preview</b><small>Replace with the clinic’s verified location</small></div></section>
+        <footer class="footer"><div class="container footer-inner"><span>© Harbour Dental · Demo brand</span><div><a href="#privacy">Privacy</a><a href="#consent">Cookie preferences & consent</a></div></div></footer>
+        <div class="mobile-action-bar"><button class="button whatsapp" data-go="booking">◉ Book on WhatsApp</button><a class="button warm" href="tel:+10000000000">Call</a></div>
+      </section>
+
+      <section class="screen" id="screen-service" data-title="Check-up">
+        <div class="container inner-page"><button class="back-link" data-go="home">← Home / Services</button><div class="service-intro"><div><p class="eyebrow">Service details</p><h1>Check-up</h1><p class="lead">A check-up is a visit where a dental professional listens to your concerns and checks your teeth and gums.</p><button class="button whatsapp" data-go="booking">◉ Book on WhatsApp</button><p class="small-note">Not sure what to book? Message us and we’ll help you get started.</p></div><div class="illustration-card"><div class="hero-art small-art"><div class="sun"></div><div class="person person-one"><i></i><b></b></div><div class="person person-two"><i></i><b></b></div></div></div></div>
+          <div class="service-layout"><div><h2>What it is</h2><p>We’ll talk about what brought you in, then review your teeth and gums. Your clinician can explain what they notice and discuss possible next steps.</p><h2>Who it may be for</h2><p>A check-up may suit you if you’d like to discuss your oral health, have a concern, or are returning to the dentist after some time away.</p><h2>What happens during the visit</h2><div class="visit-steps"><p><b>1</b> Tell us what you’d like help with.</p><p><b>2</b> Your clinician checks your teeth and gums and listens to your concerns.</p><p><b>3</b> You’ll discuss what was found and possible next steps.</p></div><h2>Frequently asked questions</h2><div class="faq-list"><details><summary>I feel nervous. Can I talk about that?</summary><p>Yes. Let the team know when you book, or at the start of your visit. Your clinician can explain what to expect.</p></details><details><summary>How long does a check-up take?</summary><p>Allow about [confirmed duration]. Time may vary depending on your needs.</p></details><details><summary>How much does it cost?</summary><p>The guide price is [confirmed price and currency]. Contact us to confirm the current fee and what it includes.</p></details></div></div>
+            <aside class="booking-card"><h3>Plan your visit</h3><p><b>Duration</b><br>[Confirm with clinic]</p><p><b>Price guide</b><br>[Confirm with clinic]</p><p class="small-note">Fee and timing are not supplied in this demo.</p><button class="button whatsapp full" data-go="booking">◉ Book on WhatsApp</button><a class="phone-link" href="tel:+10000000000">Call (000) 000-0000</a></aside></div></div>
+        <div class="mobile-action-bar"><button class="button whatsapp" data-go="booking">◉ Book on WhatsApp</button><a class="button warm" href="tel:+10000000000">Call</a></div>
+      </section>
+
+      <section class="screen" id="screen-doctor" data-title="Doctor profile">
+        <div class="container inner-page"><button class="back-link" data-go="home">← Home / Our team</button><div class="profile-header"><div class="doctor-avatar profile-avatar"><span>DR</span></div><div><p class="eyebrow">DEMO PROFILE — verify before publishing</p><h1>Dr. Alex Morgan</h1><p class="lead">General Dentist</p><button class="button primary" data-go="booking">Book with this doctor</button></div></div>
+          <div class="profile-grid"><article class="panel"><h2>Qualifications</h2><p>[Verified qualifications to be added]</p><h2>Registration</h2><p>[Registration body and verified number to be added]</p><h2>Languages</h2><p>[Confirm languages with clinician]</p></article><article class="panel"><h2>Treatments offered</h2><ul><li>Check-up</li><li>Cleaning</li><li>Fillings</li><li>[Confirm additional treatments]</li></ul><h2>About</h2><p>[Clinician-approved introduction to be added.]</p><p class="small-note">No qualifications, registration details, or availability are asserted by this prototype.</p></article></div></div>
+        <div class="mobile-action-bar"><button class="button primary" data-go="booking">Book with this doctor</button><a class="button warm" href="tel:+10000000000">Call</a></div>
+      </section>
+
+      <section class="screen" id="screen-booking" data-title="Booking">
+        <div class="booking-wrap"><div class="booking-header"><a class="brand compact" href="#" data-go="home"><span class="brand-mark">H</span><span>Harbour <b>Dental</b></span></a><span id="booking-step-label">Step 1 of 4</span></div><div class="progress"><span id="progress-fill"></span></div>
+          <div class="booking-content" id="booking-content"></div>
+          <div class="booking-footer"><button class="button primary full" id="booking-next">Continue</button><button class="text-button" id="booking-back" hidden>← Back</button><p class="consent-note">Your details are used to respond to your request. <a href="#privacy">Privacy & consent</a></p></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-wa-chat" data-title="WhatsApp conversation">
+        <div class="phone-demo"><div class="phone-status"><span>9:41</span><span>●●●  ▰</span></div><div class="wa-header"><button class="icon-button" data-go="home" aria-label="Back">←</button><div class="wa-avatar">H</div><div><b>Harbour Dental</b><small>Business account · demo</small></div><button class="icon-button" aria-label="More options">⋮</button></div>
+          <div class="chat-date">TODAY</div><div class="chat-messages" id="chat-messages"><div class="bubble incoming">Hi, welcome to Harbour Dental. I can help with an appointment request.<time>9:40 AM</time></div><div class="bubble incoming">What would you like help with?<time>9:40 AM</time></div><div class="bubble outgoing">Check-up<time>9:41 AM ✓✓</time></div><div class="bubble incoming">Thanks. We’ve received your request. A team member will call you shortly to confirm.<time>9:41 AM</time></div><div class="bubble incoming">Your ticket number is DEMO-1042.<time>9:41 AM</time></div></div>
+          <form class="chat-compose" id="patient-chat-form"><button type="button" class="icon-button" aria-label="Attach">＋</button><input id="patient-chat-input" aria-label="Message the clinic" placeholder="Message the clinic"><button class="send-button" aria-label="Send message">↑</button></form>
+        </div>
+      </section>
+
+      <div class="crm-layout screen" id="screen-dashboard" data-title="Staff CRM">
+        <aside class="crm-sidebar"><a class="brand crm-brand" href="#" data-go="dashboard"><span class="brand-mark">H</span><span>Harbour <b>Desk</b></span></a><small class="sidebar-caption">WORKSPACE</small><button class="crm-nav active" data-go="dashboard"><span>▦</span> Tickets</button><button class="crm-nav" data-go="customers"><span>♙</span> Customers</button><button class="crm-nav"><span>▣</span> Appointments</button><button class="crm-nav"><span>▤</span> Reports</button><button class="crm-nav"><span>⚙</span> Settings</button><div class="sidebar-bottom"><span class="avatar">AM</span><span>Alex Morgan<small>Team member · demo</small></span></div></aside>
+        <div class="crm-main"><header class="crm-topbar"><div><p class="eyebrow">Tuesday, 18 November</p><h1>Good morning, Alex</h1></div><label class="search-box"><span>⌕</span><input id="global-search" placeholder="Search name or mobile number" aria-label="Search patients by name or mobile number"><kbd>⌘ K</kbd></label><span class="live"><i></i> Live</span></header>
+          <div class="demo-banner">SYNTHETIC TEST DATA — no real patient records</div>
+          <div class="crm-content"><div class="metric-row"><article class="metric-card"><span>Today’s appointments</span><b>08</b><small>2 upcoming</small></article><article class="metric-card"><span>New tickets to call</span><b>04</b><small>Oldest: 18 min ago</small></article><article class="metric-card"><span>Follow-ups</span><b>03</b><small>Due today</small></article></div>
+            <div class="dashboard-grid"><section class="panel"><div class="panel-heading"><div><h2>Today’s appointments</h2><p>Tuesday · 18 November · demo schedule</p></div><button class="text-button">View all →</button></div><div class="appointment-row"><time>10:00</time><span class="avatar pale">JD</span><span><b>Jamie Demo</b><small>Check-up</small></span><span class="badge scheduled">Scheduled</span></div><div class="appointment-row"><time>10:30</time><span class="avatar pale">RS</span><span><b>Riley Sample</b><small>Cleaning</small></span><span class="badge scheduled">Scheduled</span></div><div class="appointment-row"><time>11:15</time><span class="avatar pale">TK</span><span><b>Taylor Example</b><small>Follow-up</small></span><span class="badge called">Called</span></div></section>
+              <section class="panel"><div class="panel-heading"><div><h2>Awaiting a call</h2><p>New requests needing follow-up</p></div><span class="count-pill">4</span></div><div class="call-ticket"><div><b>DEMO-1042</b><small>Jamie Demo · Check-up</small></div><a class="button primary mini" href="tel:+10000000001">Call</a></div><div class="call-ticket"><div><b>DEMO-1041</b><small>Riley Sample · Tooth concern</small></div><a class="button primary mini" href="tel:+10000000002">Call</a></div><button class="text-button" data-open-ticket>See all new tickets →</button></section></div>
+            <section class="panel table-panel"><div class="panel-heading"><div><h2>Recent tickets</h2><p>Latest patient requests</p></div><div class="filter-actions"><button class="filter-chip active">All tickets</button><button class="filter-chip">New</button></div></div><div class="table-scroll"><table><thead><tr><th>Ticket number</th><th>Customer</th><th>Phone</th><th>Request</th><th>Source</th><th>Status</th></tr></thead><tbody><tr data-open-ticket data-customer="jamie" tabindex="0"><td><b>DEMO-1042</b></td><td>Jamie Demo</td><td>+1 000-000-0001</td><td>Check-up</td><td><span class="source-tag">WhatsApp</span></td><td><span class="badge new">New</span></td></tr><tr data-open-ticket data-customer="riley" tabindex="0"><td><b>DEMO-1041</b></td><td>Riley Sample</td><td>+1 000-000-0002</td><td>Tooth concern</td><td><span class="source-tag">Website</span></td><td><span class="badge called">Called</span></td></tr><tr data-open-ticket tabindex="0"><td><b>DEMO-1039</b></td><td>Taylor Example</td><td>+1 000-000-0003</td><td>Cleaning</td><td><span class="source-tag">Walk-in</span></td><td><span class="badge scheduled">Scheduled</span></td></tr><tr data-open-ticket tabindex="0"><td><b>DEMO-1038</b></td><td>Jordan Sample</td><td>+1 000-000-0004</td><td>Follow-up</td><td><span class="source-tag">Website</span></td><td><span class="badge visited">Visited</span></td></tr></tbody></table></div></section></div>
+        </div>
+      </div>
+
+      <div class="crm-layout screen" id="screen-ticket" data-title="Ticket detail">
+        <aside class="crm-sidebar"><a class="brand crm-brand" href="#" data-go="dashboard"><span class="brand-mark">H</span><span>Harbour <b>Desk</b></span></a><small class="sidebar-caption">WORKSPACE</small><button class="crm-nav active" data-go="dashboard"><span>▦</span> Tickets</button><button class="crm-nav" data-go="customers"><span>♙</span> Customers</button><button class="crm-nav"><span>▣</span> Appointments</button><button class="crm-nav"><span>▤</span> Reports</button><button class="crm-nav"><span>⚙</span> Settings</button><div class="sidebar-bottom"><span class="avatar">AM</span><span>Alex Morgan<small>Team member · demo</small></span></div></aside>
+        <div class="crm-main"><header class="crm-topbar compact-top"><button class="back-link" data-go="dashboard">← Tickets</button><span class="live"><i></i> Live</span></header><div class="demo-banner">SYNTHETIC TEST DATA — no real patient records</div>
+          <div class="ticket-heading"><div><p class="eyebrow">TICKET · <span id="ticket-source">WHATSAPP</span></p><h1><span id="ticket-number">DEMO-1042</span> <span id="ticket-status-chip" class="badge new">New</span></h1><p id="ticket-request">Check-up request · Received today at 9:41 AM</p></div><a class="button warm call-large" id="ticket-call" href="tel:+10000000001">☎ Call +1 000-000-0001</a></div>
+          <div class="ticket-grid"><section class="panel patient-panel"><div class="panel-heading"><h2>Patient profile</h2><button class="text-button" data-go="customers">Full history →</button></div><label class="field-label">Status<select id="ticket-status"><option>New</option><option>Called</option><option>Scheduled</option><option>Visited</option><option>Closed</option></select></label><dl class="profile-fields"><dt>Name</dt><dd id="ticket-patient-name">Jamie Demo</dd><dt>Phone</dt><dd id="ticket-patient-phone">+1 000-000-0001</dd><dt>Date of birth</dt><dd>Not provided</dd></dl><div class="allergy-box"><b>⚠ Allergies</b><p>Not recorded — confirm with patient before care.</p></div><button class="button secondary full" data-go="ticket-chat">Open WhatsApp conversation</button></section>
+            <section class="panel history-panel"><div class="panel-heading"><div><h2>Patient timeline</h2><p>Visits, notes and prescriptions</p></div></div><p class="history-intro">First-time patient in this demo. Clinical records below are not on file.</p><div class="history-empty-list"><div><b>Past visits</b><small>No previous visits recorded</small></div><div><b>Doctor’s notes</b><small>No notes recorded</small></div><div><b>Medicines</b><small>No medicines recorded</small></div><div><b>Prescriptions</b><small>No prescriptions recorded</small></div></div><div class="timeline-item"><i></i><div><b>Appointment request received</b><small id="ticket-timestamp">Today · 9:41 AM · WhatsApp</small><p id="ticket-request-detail">Requested a check-up. No clinical advice or treatment recorded.</p></div></div></section>
+            <section class="panel action-panel"><h2>Files & care notes</h2><label class="upload-area"><input type="file" id="file-upload" multiple accept="image/*,.pdf"><span>＋</span><b>Upload files</b><small>X-rays, images or reports · PDF/JPG/PNG</small></label><div id="file-list" class="file-list"></div><h3>Add note</h3><textarea rows="3" placeholder="Add an internal note…"></textarea><button class="button primary full" id="add-note">Save internal note</button><hr><h3>Add medicine</h3><p class="small-note">Enter only clinician-authorized details; nothing is prefilled.</p><label class="field-label">Medicine name<input id="medicine-name" placeholder="Enter confirmed name"></label><label class="field-label">Directions<input id="medicine-directions" placeholder="Enter confirmed directions"></label><button class="button secondary full" id="add-medicine" disabled>Add medicine</button></section></div>
+        </div>
+      </div>
+
+      <div class="crm-layout screen" id="screen-customers" data-title="Customer search">
+        <aside class="crm-sidebar"><a class="brand crm-brand" href="#" data-go="dashboard"><span class="brand-mark">H</span><span>Harbour <b>Desk</b></span></a><small class="sidebar-caption">WORKSPACE</small><button class="crm-nav" data-go="dashboard"><span>▦</span> Tickets</button><button class="crm-nav active"><span>♙</span> Customers</button><button class="crm-nav"><span>▣</span> Appointments</button><button class="crm-nav"><span>▤</span> Reports</button><button class="crm-nav"><span>⚙</span> Settings</button><div class="sidebar-bottom"><span class="avatar">AM</span><span>Alex Morgan<small>Team member · demo</small></span></div></aside>
+        <div class="crm-main"><header class="crm-topbar"><div><p class="eyebrow">CUSTOMER DIRECTORY</p><h1>Find a customer</h1></div><span class="live"><i></i> Live</span></header><div class="demo-banner">SYNTHETIC TEST DATA — no real patient records</div><div class="crm-content customer-page"><label class="search-box wide-search"><span>⌕</span><input id="customer-search" value="+1 000-000-0001" placeholder="Search by name or mobile number"><button class="clear-search" aria-label="Clear search">×</button></label><div class="customer-layout"><section class="panel results-panel"><h2>Search results <small id="results-count">2 matches</small></h2><button class="customer-result selected" data-customer="jamie"><span class="avatar pale">JD</span><span><b>Jamie Demo</b><small>+1 000-000-0001</small></span><span>›</span></button><button class="customer-result" data-customer="riley"><span class="avatar pale">RS</span><span><b>Riley Sample</b><small>+1 000-000-0002</small></span><span>›</span></button><p id="no-customer-results" class="small-note" hidden>No customer found. Check the name or number and try again.</p></section><section class="panel customer-history"><div class="customer-identity"><span class="avatar large">JD</span><div><h2 id="customer-name">Jamie Demo</h2><p id="customer-summary">+1 000-000-0001 · First-time patient in demo</p></div><button class="button primary" data-open-ticket>Open ticket</button></div><div class="profile-facts"><span><small>Date of birth</small><b id="customer-dob">Not provided</b></span><span><small>Allergies</small><b id="customer-allergies">Not recorded</b></span><span><small>Preferred language</small><b id="customer-language">Not recorded</b></span></div><h3>Full history</h3><div class="empty-state compact-empty"><span>◷</span><b id="customer-history-status">No previous visits recorded</b><p id="customer-history-detail">Ticket DEMO-1042 · Check-up request received today.</p></div></section></div></div></div>
+      </div>
+
+      <div class="crm-layout screen" id="screen-ticket-chat" data-title="Ticket conversation">
+        <aside class="crm-sidebar"><a class="brand crm-brand" href="#" data-go="dashboard"><span class="brand-mark">H</span><span>Harbour <b>Desk</b></span></a><small class="sidebar-caption">WORKSPACE</small><button class="crm-nav active" data-go="dashboard"><span>▦</span> Tickets</button><button class="crm-nav" data-go="customers"><span>♙</span> Customers</button><button class="crm-nav"><span>▣</span> Appointments</button><button class="crm-nav"><span>▤</span> Reports</button><button class="crm-nav"><span>⚙</span> Settings</button></aside>
+        <div class="crm-main"><header class="crm-topbar compact-top"><button class="back-link" data-go="ticket">← DEMO-1042</button><span class="live"><i></i> Live</span></header><div class="demo-banner">SYNTHETIC TEST DATA — demo conversation</div><div class="staff-chat-layout"><section class="panel mini-ticket"><p class="eyebrow">TICKET</p><h2>DEMO-1042</h2><span class="badge new">New</span><hr><b>Jamie Demo</b><p>+1 000-000-0001</p><p>Check-up request</p><a class="button warm full" href="tel:+10000000001">☎ Call patient</a><button class="button secondary full" data-go="ticket">Ticket details</button></section><section class="panel staff-conversation"><div class="panel-heading"><div><h2>WhatsApp conversation</h2><p>Jamie Demo · +1 000-000-0001</p></div><span class="source-tag">WhatsApp</span></div><div class="staff-messages"><div class="bubble incoming">Hi, welcome to Harbour Dental. I can help with an appointment request.<time>9:40 AM</time></div><div class="bubble incoming">What would you like help with?<time>9:40 AM</time></div><div class="bubble outgoing">Check-up<time>9:41 AM ✓✓</time></div><div class="bubble incoming">Thanks. We’ve received your request. A team member will call you shortly to confirm.<time>9:41 AM</time></div><div class="bubble incoming">Your ticket number is DEMO-1042.<time>9:41 AM</time></div></div><form class="reply-form" id="staff-reply-form"><label>Reply as <select><option>Staff reply to patient</option><option>Internal note only</option></select></label><div class="reply-compose"><textarea id="staff-reply" placeholder="Write a reply…"></textarea><button class="button whatsapp" type="submit">Send</button></div><small>Check the recipient and message before sending.</small></form></section></div></div>
+      </div>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

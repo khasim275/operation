@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Sixteen porcelain forms forming a dental arch, viewed from above">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#faf9f5"/><stop offset="1" stop-color="#e6ece6"/></linearGradient><radialGradient id="tooth" cx=".3" cy=".2"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#d9e1dc"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="800" cy="570" rx="570" ry="255" fill="#65766f" opacity=".16" filter="url(#shadow)"/>
+  <path d="M300 615 Q800 120 1300 615" fill="none" stroke="#0f5c5c" stroke-width="11" stroke-linecap="round"/>
+  <g fill="url(#tooth)" stroke="#cbd6d0" stroke-width="4">
+    <rect x="275" y="540" width="86" height="145" rx="29" transform="rotate(-54 318 612)"/><rect x="347" y="444" width="88" height="149" rx="30" transform="rotate(-47 391 518)"/>
+    <rect x="431" y="359" width="90" height="154" rx="31" transform="rotate(-39 476 436)"/><rect x="526" y="292" width="94" height="160" rx="32" transform="rotate(-30 573 372)"/>
+    <rect x="630" y="245" width="96" height="164" rx="33" transform="rotate(-20 678 327)"/><rect x="739" y="222" width="98" height="168" rx="34" transform="rotate(-8 788 306)"/>
+    <rect x="853" y="222" width="98" height="168" rx="34" transform="rotate(8 902 306)"/><rect x="966" y="245" width="96" height="164" rx="33" transform="rotate(20 1014 327)"/>
+    <rect x="1076" y="292" width="94" height="160" rx="32" transform="rotate(30 1123 372)"/><rect x="1180" y="359" width="90" height="154" rx="31" transform="rotate(39 1225 436)"/>
+    <rect x="1265" y="444" width="88" height="149" rx="30" transform="rotate(47 1309 518)"/><rect x="1335" y="540" width="86" height="145" rx="29" transform="rotate(54 1378 612)"/>
+  </g>
+  <text x="800" y="874" text-anchor="middle" fill="#173c3d" font-family="Georgia,serif" font-size="51">One connected team, here for your care</text>
+</svg>

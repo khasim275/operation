@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Gangayya Dental Hospital wordmark on a light porcelain background">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fbfaf6"/><stop offset="1" stop-color="#e8eee8"/></linearGradient><radialGradient id="orb" cx=".3" cy=".2"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#dce5df"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="1160" cy="565" rx="300" ry="195" fill="#66776e" opacity=".13" filter="url(#shadow)"/>
+  <circle cx="1160" cy="500" r="178" fill="url(#orb)" stroke="#d1dbd5" stroke-width="4"/>
+  <path d="M1010 525 Q1160 360 1310 525" fill="none" stroke="#0f5c5c" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#fffefa" stroke="#d5ddd8" stroke-width="2"><rect x="1060" y="490" width="39" height="67" rx="15" transform="rotate(-35 1080 523)"/><rect x="1106" y="455" width="40" height="69" rx="15" transform="rotate(-15 1126 490)"/><rect x="1151" y="449" width="40" height="69" rx="15" transform="rotate(5 1171 484)"/><rect x="1197" y="467" width="39" height="67" rx="15" transform="rotate(25 1217 500)"/></g>
+  <text x="148" y="430" fill="#0f5c5c" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">A GENTLER KIND OF DENTAL VISIT</text>
+  <text x="140" y="540" fill="#173c3d" font-family="Georgia,serif" font-size="65">Gangayya Dental Hospital</text>
+  <text x="148" y="610" fill="#526665" font-family="Arial,sans-serif" font-size="29">Marlapur · PIN 523316 · thoughtful care, at your pace.</text>
+  <rect x="145" y="685" width="245" height="70" rx="35" fill="#e99136"/>
+  <text x="267" y="730" text-anchor="middle" fill="#281a0b" font-family="Arial,sans-serif" font-size="21" font-weight="700">BOOK A VISIT</text>
+</svg>

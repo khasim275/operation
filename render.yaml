@@ -1,0 +1,113 @@
+services:
+  - type: web
+    name: dental-crm-portals
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_HOST
+        value: 0.0.0.0
+      - key: APP_PORT
+        value: 10000
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: OTP_PEPPER
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: DB_POOL_MAX
+        value: 8
+      - key: CLINIC_NAME
+        sync: false
+      - key: CLINIC_CITY
+        sync: false
+      - key: CLINIC_COUNTRY
+        value: India
+      - key: CLINIC_ADDRESS
+        sync: false
+      - key: CLINIC_PHONE
+        sync: false
+      - key: CLINIC_WHATSAPP
+        sync: false
+      - key: CLINIC_TIMEZONE
+        value: Asia/Kolkata
+      - key: BRANCH_NAME
+        value: Main Branch
+      - key: DEFAULT_COUNTRY_CODE
+        value: 91
+      - key: PUBLIC_BASE_URL
+        value: https://dental-crm-portals.onrender.com
+      - key: PATIENT_PORTAL_URL
+        value: https://dental-crm-portals.onrender.com/book
+      - key: STAFF_PORTAL_URL
+        value: https://dental-crm-portals.onrender.com/staff
+      - key: OTP_PORTAL_URL
+        value: https://dental-crm-portals.onrender.com/secure
+      - key: CORS_ALLOWED_ORIGINS
+        value: "[]"
+      - key: STORAGE_DIR
+        value: /tmp/private_uploads
+      - key: MAX_UPLOAD_BYTES
+        value: 26214400
+      - key: COOKIE_SECURE
+        value: true
+      - key: DEMO_MODE
+        value: false
+      - key: META_VERIFY_TOKEN
+        sync: false
+      - key: META_APP_SECRET
+        sync: false
+      - key: META_ACCESS_TOKEN
+        sync: false
+      - key: META_PHONE_NUMBER_ID
+        sync: false
+      - key: META_GRAPH_VERSION
+        value: v23.0
+      - key: META_TEMPLATE_OTP
+        sync: false
+      - key: META_TEMPLATE_CONFIRMATION
+        sync: false
+      - key: META_TEMPLATE_PATIENT_CARD
+        sync: false
+      - key: META_TEMPLATE_REMINDER_24H
+        sync: false
+      - key: META_TEMPLATE_REMINDER_2H
+        sync: false
+      - key: META_TEMPLATE_LANGUAGE
+        value: en
+      - key: SMS_PROVIDER
+        sync: false
+      - key: SMS_API_URL
+        sync: false
+      - key: SMS_API_TOKEN
+        sync: false
+      - key: SMS_TWILIO_ACCOUNT_SID
+        sync: false
+      - key: SMS_TWILIO_AUTH_TOKEN
+        sync: false
+      - key: SMS_TWILIO_FROM
+        sync: false
+      - key: EMAIL_PROVIDER
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM
+        sync: false
+      - key: SMTP_STARTTLS
+        value: true
+      - key: ALLOW_TEST_OTP
+        value: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_MOBILE_10_DIGIT
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

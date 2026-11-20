@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="A patient card opening to reveal a calm teal mark">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#faf9f5"/><stop offset="1" stop-color="#e5ebe5"/></linearGradient><linearGradient id="card" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#dce8e1"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="820" cy="745" rx="435" ry="85" fill="#4d625b" opacity=".2" filter="url(#shadow)"/>
+  <g transform="rotate(-8 800 520)">
+    <rect x="390" y="310" width="820" height="440" rx="45" fill="url(#card)" stroke="#cbd8d1" stroke-width="6"/>
+    <circle cx="545" cy="455" r="68" fill="#0f5c5c"/>
+    <rect x="665" y="407" width="390" height="23" rx="12" fill="#0f5c5c" opacity=".85"/>
+    <rect x="665" y="470" width="275" height="16" rx="8" fill="#a9bbb2"/>
+    <rect x="665" y="520" width="320" height="16" rx="8" fill="#a9bbb2"/>
+    <rect x="490" y="612" width="620" height="15" rx="8" fill="#c1cec7"/>
+  </g>
+  <text x="800" y="874" text-anchor="middle" fill="#173c3d" font-family="Georgia,serif" font-size="48">Your plan, explained before you choose</text>
+</svg>

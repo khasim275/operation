@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f6f1">
+    <meta name="description" content="Dental care at Gangayya Dental Hospital in Marlapur, with time to ask questions and understand your options.">
+    <title>Gangayya Dental Hospital | Dental care in Marlapur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Hallmark · Gangayya Dental Hospital · 3D clinic landing · preserve six camera shots and verified-only location · critique: hero copy needs clear contrast over art, scrim retained */
+      :root {
+        color-scheme: light;
+        --ink: #173c3d;
+        --muted: #526665;
+        --teal: #0f5c5c;
+        --mint: #e4efea;
+        --paper: #f7f6f1;
+        --white: #fffefa;
+        --line: rgba(23, 60, 61, .15);
+        --orange: #e99136;
+        --font-body: "DM Sans", sans-serif;
+        --font-display: Georgia, "Times New Roman", serif;
+        --focus: #a34a10;
+        --button-text: #281a0b;
+        --button-shadow: rgba(111, 63, 12, .13);
+        --button-hover: #f0a94f;
+        --topbar-start: rgba(247,246,241,.96);
+        --topbar-mid: rgba(247,246,241,.78);
+        --surface-button: rgba(255,254,250,.72);
+        --surface-card: rgba(255,254,250,.77);
+        --scrim-start: rgba(247,246,241,.88);
+        --scrim-mid: rgba(247,246,241,.48);
+        --scrim-end: rgba(247,246,241,.04);
+        --scrim-static-start: rgba(247,246,241,.92);
+        --scrim-static-mid: rgba(247,246,241,.62);
+        --scrim-static-end: rgba(247,246,241,.12);
+        --scrim-mobile-mid: rgba(247,246,241,.65);
+        --scrim-mobile-end: rgba(247,246,241,.22);
+        --lead: #304d4b;
+        --fineprint: #3e5755;
+        --border-note: rgba(23,60,61,.17);
+        --surface-note: rgba(255,254,250,.7);
+        --scroll-cue: #405d5a;
+        --notice: #70400f;
+        --contact-light: #e3f0ec;
+        --contact-border: rgba(255,255,255,.55);
+        --contact-scrim-start: rgba(247,246,241,.92);
+        --contact-scrim-mid: rgba(247,246,241,.65);
+        --contact-scrim-end: rgba(247,246,241,.22);
+        font-family: var(--font-body);
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; background: var(--paper); overflow-x: clip; }
+      body { margin: 0; color: var(--ink); background: var(--paper); overflow-x: clip; }
+      [hidden] { display: none !important; }
+      a { color: inherit; }
+      button, a { -webkit-tap-highlight-color: transparent; }
+      :focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+      .nav-cta:active, .button:active, .service-link:active { transform: translateY(1px); }
+      button:disabled, a[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+      .skip-link {
+        position: fixed; z-index: 20; top: .75rem; left: .75rem; transform: translateY(-160%);
+        padding: .8rem 1rem; border-radius: .75rem; background: var(--white); color: var(--ink);
+      }
+      .skip-link:focus { transform: none; }
+      .topbar {
+        position: fixed; z-index: 10; inset: 0 0 auto; display: flex; align-items: center;
+        justify-content: space-between; gap: 1.5rem; padding: 1rem clamp(1.1rem, 5vw, 5rem);
+        color: var(--ink); background: linear-gradient(180deg, var(--topbar-start), var(--topbar-mid) 70%, transparent);
+      }
+      .brand { display: inline-flex; gap: .75rem; align-items: center; text-decoration: none; font-weight: 700; letter-spacing: -.03em; }
+      .brand-mark { display: grid; width: 2.25rem; aspect-ratio: 1; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--teal); font: 1.1rem var(--font-display); }
+      .nav-links { display: flex; gap: clamp(.9rem, 2.4vw, 2.1rem); align-items: center; }
+      .nav-links a { font-size: .88rem; font-weight: 600; text-decoration: none; }
+      .nav-links a:not(.nav-cta):hover { text-decoration: underline; text-underline-offset: .3em; }
+      .nav-cta, .button {
+        display: inline-flex; justify-content: center; align-items: center; min-height: 48px;
+        padding: .75rem 1.15rem; border: 1px solid transparent; border-radius: 999px;
+        font: 600 .92rem var(--font-body); text-decoration: none; cursor: pointer;
+        transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+      }
+      .nav-cta, .button-warm { color: var(--button-text); background: var(--orange); box-shadow: 0 5px 16px var(--button-shadow); }
+      .nav-cta:hover, .button-warm:hover { background: var(--button-hover); transform: translateY(-2px); }
+      .button-outline { border-color: var(--line); background: var(--surface-button); color: var(--ink); }
+      .button-outline:hover { background: var(--white); transform: translateY(-2px); }
+      .story { position: relative; height: 600svh; min-height: 3600px; }
+      .stage {
+        position: sticky; top: 0; height: 100svh; min-height: 620px; overflow: hidden;
+        isolation: isolate; background: var(--paper);
+      }
+      #world { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; display: block; }
+      .scrim { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(90deg, var(--scrim-start), var(--scrim-mid) 45%, var(--scrim-end) 100%); }
+      .poster-fallback { display: none; position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .stage.static .poster-fallback { display: block; }
+      .stage.static #world { display: none; }
+      .stage.static .scrim { background: linear-gradient(90deg, var(--scrim-static-start), var(--scrim-static-mid) 58%, var(--scrim-static-end)); }
+      body.render-mode { position: fixed; inset: 0; width: 100%; }
+      body.render-mode .story { height: 100svh; min-height: 0; }
+      body.render-mode .stage { position: fixed; z-index: 20; inset: 0; height: 100svh; min-height: 0; }
+      body.render-mode .topbar { z-index: 30; }
+      body.render-mode .below, body.render-mode footer { display: none; }
+      body.render-mode .chapter { transition: none; }
+      .chapter {
+        position: absolute; z-index: 2; inset: 0; display: grid; align-items: center;
+        grid-template-columns: minmax(0, 1fr) minmax(15rem, .85fr);
+        gap: clamp(1.5rem, 5vw, 6rem); padding: clamp(6.5rem, 12vh, 9rem) clamp(1.25rem, 9vw, 9rem) 4rem;
+        transition: opacity .55s ease, transform .55s ease, visibility .55s;
+      }
+      html.js .chapter { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(1.25rem); }
+      html.js .chapter.active { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+      .chapter.active { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+      .chapter[data-shot="4"] .side-note { display: none; }
+      .chapter-copy { max-width: 39rem; }
+      h1, h2 { margin: 0; max-width: 12ch; font: 500 clamp(2.65rem, 6.7vw, 6.6rem)/.99 var(--font-display); letter-spacing: -.055em; text-wrap: balance; }
+      .chapter h2 { font-size: clamp(2.35rem, 5.3vw, 5.2rem); }
+      .lead { max-width: 33rem; margin: 1.35rem 0 0; color: var(--lead); font-size: clamp(1.03rem, 1.5vw, 1.25rem); line-height: 1.65; }
+      .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.7rem; }
+      .fineprint { max-width: 33rem; margin: 1rem 0 0; color: var(--fineprint); font-size: .83rem; line-height: 1.6; }
+      .side-note { align-self: end; justify-self: end; max-width: 19rem; margin-bottom: 1.8rem; padding: 1.1rem 1.25rem; border: 1px solid var(--border-note); border-radius: 1rem; color: var(--lead); background: var(--surface-note); line-height: 1.55; }
+      .side-note strong { display: block; margin-bottom: .35rem; color: var(--ink); }
+      .service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; max-width: 29rem; margin-top: 1.4rem; }
+      .service-link { min-height: 48px; display: flex; align-items: center; padding: .7rem .85rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--surface-card); color: var(--ink); font-size: .88rem; font-weight: 600; text-decoration: none; }
+      .service-link:hover { border-color: var(--teal); background: var(--white); }
+      .scroll-cue { position: absolute; right: clamp(1.2rem, 4vw, 4rem); bottom: 1.5rem; display: flex; align-items: center; gap: .55rem; color: var(--scroll-cue); font-size: .78rem; }
+      .scroll-cue::before { content: ""; width: 1.7rem; height: 1px; background: currentColor; }
+      .skip-intro { position: absolute; right: clamp(1.2rem, 4vw, 4rem); top: 5.6rem; border: 0; padding: .5rem; color: var(--ink); background: transparent; font: 600 .82rem var(--font-body); text-decoration: underline; text-underline-offset: .25em; cursor: pointer; }
+      .notice { min-height: 1.4rem; margin-top: .8rem; color: var(--notice); font-size: .85rem; }
+      .below { padding: clamp(4rem, 9vw, 8rem) clamp(1.25rem, 9vw, 9rem); }
+      .below-inner { max-width: 76rem; margin: 0 auto; }
+      .below h2 { max-width: 15ch; font-size: clamp(2.3rem, 4.5vw, 4rem); }
+      .eyebrow { margin: 0 0 .9rem; color: var(--teal); font-size: .78rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+      .visit-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2.25rem; }
+      .visit-step { position: relative; min-height: 13rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: 1.15rem; background: var(--white); }
+      .visit-step-number { display: grid; width: 2.5rem; aspect-ratio: 1; place-items: center; margin-bottom: 1.3rem; border-radius: 50%; color: var(--teal); background: var(--mint); font: 1.15rem var(--font-display); }
+      .visit-step h3 { margin: 0; font-size: 1.1rem; letter-spacing: -.02em; }
+      .visit-step p { margin: .6rem 0 0; color: var(--muted); line-height: 1.6; }
+      .service-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+      .service-list li { padding: 1.25rem; min-height: 6rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--white); font-weight: 600; }
+      .contact { color: var(--white); background: var(--teal); }
+      .contact .lead { color: var(--contact-light); }
+      .contact h2 { color: var(--white); }
+      .contact .button-outline { border-color: var(--contact-border); color: var(--white); background: transparent; }
+      .contact .fineprint { color: var(--contact-light); }
+      footer { padding: 1.5rem clamp(1.25rem, 9vw, 9rem); color: var(--muted); font-size: .83rem; }
+      @media (max-width: 760px) {
+        .topbar { padding: .8rem 1rem; }
+        .nav-links a:not(.nav-cta) { display: none; }
+        .nav-cta { min-height: 46px; padding: .6rem .9rem; font-size: .8rem; }
+        .stage { min-height: 560px; }
+        .scrim { background: linear-gradient(90deg, var(--contact-scrim-start), var(--contact-scrim-mid) 72%, var(--contact-scrim-end)); }
+        .chapter { grid-template-columns: 1fr; align-content: center; gap: 1rem; padding: 6rem 1.25rem 4.5rem; }
+        .side-note { display: none; }
+        h1 { font-size: clamp(2.7rem, 12vw, 4.5rem); }
+        .chapter h2 { font-size: clamp(2.3rem, 10vw, 4rem); }
+        .service-grid { max-width: 100%; }
+        .story { min-height: 3300px; }
+        .service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .visit-steps { grid-template-columns: 1fr; }
+        .visit-step { min-height: auto; }
+        .skip-intro { top: 5rem; }
+      }
+      @media (max-height: 700px) and (min-width: 761px) {
+        .stage { min-height: 520px; }
+        .chapter { padding-top: 5.2rem; padding-bottom: 2rem; }
+        h1 { font-size: clamp(2.5rem, 5.7vw, 5rem); }
+        .chapter h2 { font-size: clamp(2.25rem, 4.7vw, 4.4rem); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      }
+      html:not(.js) .story { height: auto; min-height: 0; }
+      html:not(.js) .stage { position: relative; top: auto; display: flex; height: auto; min-height: 0; flex-direction: column; overflow: visible; padding: 6rem 0 1rem; }
+      html:not(.js) #world, html:not(.js) .poster-fallback, html:not(.js) .scrim, html:not(.js) .skip-intro, html:not(.js) .scroll-cue, html:not(.js) .side-note { display: none; }
+      html:not(.js) .chapter { position: relative; inset: auto; display: block; padding: 2rem 1.25rem; opacity: 1; visibility: visible; pointer-events: auto; transform: none; transition: none; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#main" aria-label="Gangayya Dental Hospital home"><span class="brand-mark" aria-hidden="true">+</span><span data-clinic-name>Gangayya Dental Hospital</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#approach">Our approach</a>
+        <a href="#contact">Location</a>
+        <a class="nav-cta" href="#contact" data-whatsapp>Book appointment</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="story" id="story" aria-label="A calm introduction to our dental hospital">
+        <div class="stage" id="stage">
+          <canvas id="world" aria-hidden="true"></canvas>
+          <img class="poster-fallback" id="fallbackPoster" src="./posters/fallback.svg" alt="" aria-hidden="true">
+          <div class="scrim" aria-hidden="true"></div>
+          <button class="skip-intro" id="skipIntro" type="button">Skip intro</button>
+          <section class="chapter active" data-shot="0" aria-labelledby="shot1-title">
+            <div class="chapter-copy">
+              <p class="eyebrow">Gangayya Dental Hospital · Marlapur</p>
+              <h1 id="shot1-title">Dental care, with time for your questions.</h1>
+              <p class="lead">Start with a conversation. We’ll listen to what’s bothering you, explain what we find, and talk through the next step together.</p>
+              <div class="actions"><a class="button button-warm" href="#contact" data-whatsapp>Book appointment</a><a class="button button-outline" href="#contact" data-call>Call now</a></div>
+              <p class="fineprint">Your visit begins with listening. You can ask questions before deciding what feels right for you.</p>
+              <p class="notice" role="status" aria-live="polite"></p>
+            </div>
+            <aside class="side-note"><strong>Start with a conversation</strong>No pressure to decide on treatment before you understand it.</aside>
+          </section>
+          <section class="chapter" data-shot="1" aria-labelledby="shot2-title">
+            <div class="chapter-copy">
+              <h2 id="shot2-title">A visit should feel considered.</h2>
+              <p class="lead">Our team will hear your concerns, answer your questions, and make a plan together with you.</p>
+              <p class="fineprint">We’ll explain what happens next before we begin. You can ask us to pause at any time.</p>
+            </div>
+            <aside class="side-note"><strong>Here to help, not hurry</strong>Choose a time to talk with our team before booking.</aside>
+          </section>
+          <section class="chapter" data-shot="2" aria-labelledby="shot3-title">
+            <div class="chapter-copy">
+              <h2 id="shot3-title">A place for the questions you’ve been carrying.</h2>
+              <p class="lead">Bring what’s on your mind. Your dentist can help you understand which options fit your needs after an examination.</p>
+              <div class="service-grid" aria-label="Dental services">
+                <a class="service-link" href="#contact" data-service="Check-up">Check-up</a><a class="service-link" href="#contact" data-service="Cleaning">Cleaning</a>
+                <a class="service-link" href="#contact" data-service="Fillings">Fillings</a><a class="service-link" href="#contact" data-service="Root canal">Root canal</a>
+                <a class="service-link" href="#contact" data-service="Braces">Braces</a><a class="service-link" href="#contact" data-service="Implants">Implants</a>
+                <a class="service-link" href="#contact" data-service="Whitening">Whitening</a><a class="service-link" href="#contact" data-service="Children’s dentistry">Children’s dentistry</a>
+              </div>
+            </div>
+            <aside class="side-note"><strong>Questions are welcome</strong>We’ll talk through your options in plain language.</aside>
+          </section>
+          <section class="chapter" data-shot="3" aria-labelledby="shot4-title">
+            <div class="chapter-copy">
+              <p class="eyebrow">A check-up can start with a conversation</p>
+              <h2 id="shot4-title">Understand what’s happening before you choose.</h2>
+              <p class="lead">Talk about what you’ve noticed, hear what your dentist finds, and ask about the recommended care, alternatives, and expected costs.</p>
+              <p class="fineprint">The right next step depends on an individual examination. You’ll have time to ask questions before deciding.</p>
+            </div>
+            <aside class="side-note"><strong>Your comfort matters</strong>Let us know what would make your visit easier.</aside>
+          </section>
+          <section class="chapter" data-shot="4" aria-labelledby="shot5-title">
+            <div class="chapter-copy">
+              <h2 id="shot5-title">One connected team, here for your care.</h2>
+              <p class="lead">From your first question to your follow-up, we’ll help you know what to expect.</p>
+              <p class="fineprint">We keep your care personal, respectful, and focused on what you need.</p>
+            </div>
+            <aside class="side-note"><strong>Take the next step when you’re ready</strong>Speak with our team about a visit.</aside>
+          </section>
+          <section class="chapter" data-shot="5" aria-labelledby="shot6-title">
+            <div class="chapter-copy">
+              <h2 id="shot6-title"><span data-clinic-name>Gangayya Dental Hospital</span></h2>
+              <p class="lead">Thoughtful dental care in <span data-clinic-city>Marlapur</span>.</p>
+              <div class="actions"><a class="button button-warm" href="#contact" data-whatsapp>Book appointment</a><a class="button button-outline" href="#contact" data-call>Call now</a></div>
+              <p class="fineprint">Opening hours: 9 am to 8 pm. Operating days have not yet been confirmed.</p>
+            </div>
+            <aside class="side-note"><strong>Small steps are still progress.</strong>We look forward to listening.</aside>
+          </section>
+          <div class="scroll-cue" id="scrollCue" aria-hidden="true">Scroll to explore</div>
+        </div>
+      </div>
+      <section class="below" id="services">
+        <div class="below-inner">
+          <h2>Start with the care you’re looking for.</h2>
+          <p class="lead">The right treatment depends on your needs. We’ll discuss your options with you during a consultation.</p>
+          <ul class="service-list">
+            <li>Check-up</li><li>Cleaning</li><li>Fillings</li><li>Root canal</li>
+            <li>Braces</li><li>Implants</li><li>Whitening</li><li>Children’s dentistry</li>
+          </ul>
+        </div>
+      </section>
+      <section class="below" id="approach">
+        <div class="below-inner">
+          <p class="eyebrow">A first visit, at your pace</p>
+          <h2>Know what to expect before you begin.</h2>
+          <p class="lead">A dental visit can bring up questions. We make room for them, explain things in everyday language, and give you a chance to talk through your options.</p>
+          <div class="visit-steps" aria-label="What to expect at your visit">
+            <article class="visit-step"><span class="visit-step-number" aria-hidden="true">1</span><h3>Tell us what’s going on</h3><p>Share your concern and anything you’d like the team to know about your visit.</p></article>
+            <article class="visit-step"><span class="visit-step-number" aria-hidden="true">2</span><h3>Hear a clear explanation</h3><p>Your dentist can explain what they find and answer your questions in plain language.</p></article>
+            <article class="visit-step"><span class="visit-step-number" aria-hidden="true">3</span><h3>Decide on a next step</h3><p>Talk through the recommended care, alternatives, and expected costs before treatment starts.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="below contact" id="contact">
+        <div class="below-inner">
+          <h2>Whenever you’re ready, we’re here.</h2>
+          <p class="lead"><span data-clinic-name>Gangayya Dental Hospital</span><br><span data-clinic-city>Marlapur</span> <span data-clinic-postal>523316</span></p>
+          <p class="fineprint" data-map-location>Location: Marlapur, PIN 523316. The precise map pin and street address are not yet configured.</p>
+          <a class="button button-outline" data-map-link href="#contact" hidden rel="noopener noreferrer" target="_blank">Open map</a>
+          <div class="actions"><a class="button button-warm" href="#contact" data-whatsapp>Book appointment</a><a class="button button-outline" href="#contact" data-call>Call now</a></div>
+          <p class="fineprint">Opening hours: 9 am to 8 pm. Operating days have not yet been confirmed.</p>
+          <p class="notice" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer><span data-clinic-name>Gangayya Dental Hospital</span>. Please contact us for privacy and consent information.</footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module">
+      document.documentElement.classList.add("js");
+      const clinic = {
+        name: "Gangayya Dental Hospital",
+        city: "Marlapur",
+        postalCode: "523316",
+        phone: "",
+        whatsapp: "",
+        mapUrl: ""
+      };
+      document.querySelectorAll("[data-clinic-name]").forEach((el) => { el.textContent = clinic.name; });
+      document.querySelectorAll("[data-clinic-city]").forEach((el) => { el.textContent = clinic.city; });
+      document.querySelectorAll("[data-clinic-postal]").forEach((el) => { el.textContent = clinic.postalCode; });
+      const mapLink = document.querySelector("[data-map-link]");
+      if (clinic.mapUrl) {
+        try {
+          const parsedMapUrl = new URL(clinic.mapUrl);
+          if (parsedMapUrl.protocol === "https:" && /(^|\.)google\.[a-z.]+$/.test(parsedMapUrl.hostname)) {
+            mapLink.href = parsedMapUrl.href;
+            mapLink.hidden = false;
+            document.querySelector("[data-map-location]").hidden = true;
+          } else {
+            announce("The configured map link is not a valid HTTPS Google Maps URL.");
+          }
+        } catch {
+          announce("The configured map link is invalid.");
+        }
+      }
+
+      const statusNodes = [...document.querySelectorAll(".notice")];
+      function announce(message) { statusNodes.forEach((node) => { node.textContent = message; }); }
+      function openContact(kind, service) {
+        if (kind === "whatsapp") {
+          location.href = `/book${service ? `?service=${encodeURIComponent(service)}` : ""}`;
+          return;
+        }
+        if (kind === "call") {
+          const phoneDigits = clinic.phone.replace(/\D/g, "");
+          if (phoneDigits.length >= 8 && phoneDigits.length <= 15) {
+            location.href = `tel:${clinic.phone}`;
+            return;
+          }
+        }
+        announce(`Please add the clinic ${kind === "call" ? "phone number" : "WhatsApp number"} in the page configuration to enable this action.`);
+        document.querySelector("#contact").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      }
+      document.querySelectorAll("[data-whatsapp]").forEach((node) => node.addEventListener("click", (event) => {
+        event.preventDefault(); openContact("whatsapp", node.dataset.service || "");
+      }));
+      document.querySelectorAll("[data-call]").forEach((node) => node.addEventListener("click", (event) => {
+        event.preventDefault(); openContact("call", "");
+      }));
+      document.querySelectorAll("[data-service]").forEach((node) => node.addEventListener("click", (event) => {
+        event.preventDefault(); openContact("whatsapp", node.dataset.service);
+      }));
+
+      const stage = document.querySelector("#stage");
+      const story = document.querySelector("#story");
+      const canvas = document.querySelector("#world");
+      const chapters = [...document.querySelectorAll(".chapter")];
+      const fallbackPoster = document.querySelector("#fallbackPoster");
+      const scrollCue = document.querySelector("#scrollCue");
+      const skipIntro = document.querySelector("#skipIntro");
+      const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const renderMode = new URLSearchParams(location.search).has("render");
+      if (renderMode) document.body.classList.add("render-mode");
+      const posters = Array.from({ length: 6 }, (_, index) => `./posters/shot-${String(index + 1).padStart(2, "0")}.svg`);
+      let active = true;
+      let renderProgress = 0;
+      let renderer, scene, camera, composer, bokeh, roomTarget;
+      let sceneGroups = {};
+      let disposed = false;
+
+      function setChapter(index) {
+        const activeIndex = Math.max(0, Math.min(5, index));
+        chapters.forEach((chapter, i) => {
+          const current = i === activeIndex;
+          chapter.classList.toggle("active", current);
+          chapter.setAttribute("aria-hidden", String(!current));
+          chapter.querySelectorAll("a, button").forEach((control) => { control.tabIndex = current ? 0 : -1; });
+        });
+        fallbackPoster.src = posters[activeIndex];
+        scrollCue.hidden = activeIndex === 5;
+      }
+
+      skipIntro.addEventListener("click", () => {
+        document.querySelector("#services").scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth" });
+      });
+
+      if (reducedMotion) {
+        stage.classList.add("static");
+      }
+
+      function smoothstep(value) {
+        const x = Math.max(0, Math.min(1, value));
+        return x * x * (3 - 2 * x);
+      }
+      function spring(value) {
+        const t = Math.max(0, value);
+        return 1 - Math.exp(-7 * t) * (Math.cos(10 * t) + .7 * Math.sin(10 * t));
+      }
+      function getProgress() {
+        if (renderMode) return renderProgress;
+        const rect = story.getBoundingClientRect();
+        return Math.max(0, Math.min(1, -rect.top / Math.max(1, rect.height - innerHeight)));
+      }
+      addEventListener("scroll", () => {
+        if (!renderMode && (!renderer || reducedMotion)) {
+          setChapter(Math.min(5, Math.floor(getProgress() * 6)));
+        }
+      }, { passive: true });
+
+      async function initializeWorld() {
+        try {
+          const THREE = await import("three");
+          const [{ RoomEnvironment }, { EffectComposer }, { RenderPass }, { BokehPass }, { OutputPass }] = await Promise.all([
+            import("three/addons/environments/RoomEnvironment.js"),
+            import("three/addons/postprocessing/EffectComposer.js"),
+            import("three/addons/postprocessing/RenderPass.js"),
+            import("three/addons/postprocessing/BokehPass.js"),
+            import("three/addons/postprocessing/OutputPass.js")
+          ]);
+          if (reducedMotion || navigator.connection?.saveData || navigator.hardwareConcurrency <= 2 || !canvas.getContext("webgl2") && !canvas.getContext("webgl")) {
+            stage.classList.add("static");
+            return;
+          }
+
+          scene = new THREE.Scene();
+          scene.background = new THREE.Color("#f7f6f1");
+          scene.fog = new THREE.Fog("#f7f6f1", 27, 105);
+          scene.environmentIntensity = .62;
+          camera = new THREE.PerspectiveCamera(33, innerWidth / innerHeight, .1, 120);
+          renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: "high-performance" });
+          renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.5));
+          renderer.setSize(innerWidth, innerHeight, false);
+          renderer.shadowMap.enabled = true;
+          renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+          renderer.toneMapping = THREE.ACESFilmicToneMapping;
+          renderer.toneMappingExposure = 1.02;
+          renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+          const pmrem = new THREE.PMREMGenerator(renderer);
+          roomTarget = pmrem.fromScene(new RoomEnvironment(), .04);
+          scene.environment = roomTarget.texture;
+          pmrem.dispose();
+
+          scene.add(new THREE.HemisphereLight("#ffffff", "#d9d4c8", .95));
+          const key = new THREE.DirectionalLight("#fff5df", 2.0);
+          key.position.set(-7, 11, 6);
+          key.castShadow = true;
+          key.shadow.mapSize.set(1536, 1536);
+          key.shadow.camera.left = -18; key.shadow.camera.right = 18;
+          key.shadow.camera.top = 18; key.shadow.camera.bottom = -18;
+          key.shadow.bias = -.00025;
+          key.shadow.normalBias = .018;
+          scene.add(key);
+          const fill = new THREE.DirectionalLight("#d8f1eb", .62);
+          fill.position.set(8, 5, -12);
+          scene.add(fill);
+          const rim = new THREE.DirectionalLight("#fffdfa", 1.0);
+          rim.position.set(2, 8, -82);
+          scene.add(rim);
+
+          const floor = new THREE.Mesh(
+            new THREE.PlaneGeometry(220, 220),
+            new THREE.MeshPhysicalMaterial({ color: "#f4f1e9", roughness: .88, metalness: 0, clearcoat: .05 })
+          );
+          floor.rotation.x = -Math.PI / 2;
+          floor.position.set(0, -.12, -42);
+          floor.receiveShadow = true;
+          scene.add(floor);
+
+          const ceramic = new THREE.MeshPhysicalMaterial({ color: "#e9e5db", roughness: .32, metalness: 0, clearcoat: .4, clearcoatRoughness: .24 });
+          const porcelainSoft = new THREE.MeshPhysicalMaterial({ color: "#e9eeea", roughness: .43, metalness: 0, clearcoat: .24 });
+          const teal = new THREE.MeshPhysicalMaterial({ color: "#0f5c5c", roughness: .3, metalness: .08, clearcoat: .4, emissive: "#063635", emissiveIntensity: .08 });
+          const mint = new THREE.MeshPhysicalMaterial({ color: "#bfd6cc", roughness: .46, metalness: .02, clearcoat: .2 });
+          const podiumMat = new THREE.MeshPhysicalMaterial({ color: "#dce1db", roughness: .58, metalness: 0, clearcoat: .08 });
+          const floorMat = new THREE.MeshPhysicalMaterial({ color: "#e1e6df", roughness: .8, metalness: 0 });
+
+          const toothShape = new THREE.LatheGeometry([
+            new THREE.Vector2(0, 0), new THREE.Vector2(.27, 0), new THREE.Vector2(.39, .09),
+            new THREE.Vector2(.41, .32), new THREE.Vector2(.37, .62), new THREE.Vector2(.3, .88),
+            new THREE.Vector2(.19, 1.02), new THREE.Vector2(0, 1.06)
+          ], 32);
+          toothShape.computeVertexNormals();
+          const toothBase = new THREE.TorusGeometry(.36, .025, 8, 48);
+          function tooth(parent, position, scale = 1, rotation = 0, material = ceramic) {
+            const group = new THREE.Group();
+            group.position.set(position.x, position.y, position.z);
+            group.rotation.y = rotation;
+            group.scale.setScalar(scale);
+            const crown = new THREE.Mesh(toothShape, material);
+            crown.castShadow = true;
+            crown.receiveShadow = true;
+            group.add(crown);
+            const band = new THREE.Mesh(toothBase, teal);
+            band.rotation.x = Math.PI / 2;
+            band.position.y = .16;
+            band.castShadow = true;
+            group.add(band);
+            parent.add(group);
+            return group;
+          }
+          function roundedBox(parent, width, height, depth, radius, material, position) {
+            const shape = new THREE.Shape();
+            shape.moveTo(-width / 2 + radius, -height / 2);
+            shape.lineTo(width / 2 - radius, -height / 2);
+            shape.quadraticCurveTo(width / 2, -height / 2, width / 2, -height / 2 + radius);
+            shape.lineTo(width / 2, height / 2 - radius);
+            shape.quadraticCurveTo(width / 2, height / 2, width / 2 - radius, height / 2);
+            shape.lineTo(-width / 2 + radius, height / 2);
+            shape.quadraticCurveTo(-width / 2, height / 2, -width / 2, height / 2 - radius);
+            shape.lineTo(-width / 2, -height / 2 + radius);
+            shape.quadraticCurveTo(-width / 2, -height / 2, -width / 2 + radius, -height / 2);
+            const geometry = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelSegments: 3, steps: 1, bevelSize: .035, bevelThickness: .035 });
+            const mesh = new THREE.Mesh(geometry, material);
+            mesh.position.set(position.x, position.y, position.z);
+            mesh.castShadow = true; mesh.receiveShadow = true;
+            parent.add(mesh);
+            return mesh;
+          }
+
+          sceneGroups.feature = new THREE.Group(); scene.add(sceneGroups.feature);
+          tooth(sceneGroups.feature, { x: 0, y: 0, z: 0 }, 1.5);
+          const detailRing = new THREE.Mesh(new THREE.TorusGeometry(1.1, .018, 8, 96), mint);
+          detailRing.rotation.x = Math.PI / 2; detailRing.position.set(0, .03, 0); sceneGroups.feature.add(detailRing);
+
+          sceneGroups.gallery = new THREE.Group(); scene.add(sceneGroups.gallery);
+          const galleryWall = new THREE.Mesh(new THREE.BoxGeometry(17, 3.25, .16), mint);
+          galleryWall.position.set(0, 1.56, -21.7);
+          galleryWall.receiveShadow = true;
+          sceneGroups.gallery.add(galleryWall);
+          const wallBase = new THREE.Mesh(new THREE.BoxGeometry(15, .16, .6), floorMat);
+          wallBase.position.set(0, -.04, -19); wallBase.receiveShadow = true; wallBase.castShadow = true;
+          sceneGroups.gallery.add(wallBase);
+          const galleryCards = [];
+          for (let i = 0; i < 18; i++) {
+            const angle = (i / 17 - .5) * 1.18;
+            const x = 7.3 * Math.sin(angle);
+            const z = -19 - 1.65 * (1 - Math.cos(angle));
+            const card = roundedBox(sceneGroups.gallery, .72, 1.12, .09, .12, i % 3 === 0 ? mint : podiumMat, { x, y: 1.15, z });
+            card.rotation.y = -angle * .6;
+            const bead = new THREE.Mesh(new THREE.SphereGeometry(.22, 24, 16), i % 4 === 0 ? teal : ceramic);
+            bead.position.set(x, 1.17, z + .18); bead.scale.set(1, 1.16, .32); bead.castShadow = true;
+            sceneGroups.gallery.add(bead);
+            const stripe = new THREE.Mesh(new THREE.BoxGeometry(.3, .035, .025), teal);
+            stripe.position.set(x, .76, z + .15);
+            sceneGroups.gallery.add(stripe);
+            galleryCards.push(card);
+          }
+          const galleryArcPoints = [];
+          for (let i = 0; i <= 50; i++) {
+            const angle = (i / 50 - .5) * 1.18;
+            galleryArcPoints.push(new THREE.Vector3(7.5 * Math.sin(angle), 2.2, -19 - 1.7 * (1 - Math.cos(angle))));
+          }
+          const galleryRail = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(galleryArcPoints), 96, .025, 8, false), mint);
+          sceneGroups.gallery.add(galleryRail);
+
+          sceneGroups.dioramas = new THREE.Group(); scene.add(sceneGroups.dioramas);
+          for (let i = 0; i < 8; i++) {
+            const x = (i % 4 - 1.5) * 2.25;
+            const z = -37 - Math.floor(i / 4) * 4.2;
+            const podium = new THREE.Mesh(new THREE.CylinderGeometry(.56, .64, .2, 40), podiumMat);
+            podium.position.set(x, .05, z); podium.castShadow = true; podium.receiveShadow = true;
+            sceneGroups.dioramas.add(podium);
+            if (i === 0 || i === 1 || i === 3 || i === 6 || i === 7) tooth(sceneGroups.dioramas, { x, y: .16, z }, .52, i * .12, i % 2 ? ceramic : porcelainSoft);
+            else {
+              const orb = new THREE.Mesh(new THREE.SphereGeometry(.36, 32, 24), i % 2 ? mint : ceramic);
+              orb.position.set(x, .58, z); orb.scale.set(.9, 1.1, .88); orb.castShadow = true; sceneGroups.dioramas.add(orb);
+              const orbit = new THREE.Mesh(new THREE.TorusGeometry(.52, .018, 8, 48), teal);
+              orbit.position.set(x, .58, z); orbit.rotation.x = Math.PI / 2 + i * .18; sceneGroups.dioramas.add(orbit);
+            }
+            const plinthLine = new THREE.Mesh(new THREE.TorusGeometry(.44, .012, 8, 48), mint);
+            plinthLine.position.set(x, .18, z); plinthLine.rotation.x = Math.PI / 2; sceneGroups.dioramas.add(plinthLine);
+          }
+
+          sceneGroups.card = new THREE.Group(); scene.add(sceneGroups.card);
+          const bookBase = new THREE.Mesh(new THREE.BoxGeometry(2.5, .16, 1.7), ceramic);
+          bookBase.position.set(0, .14, -56); bookBase.castShadow = true; bookBase.receiveShadow = true;
+          sceneGroups.card.add(bookBase);
+          const bookPage = new THREE.Mesh(new THREE.BoxGeometry(2.24, .07, 1.47), porcelainSoft);
+          bookPage.position.set(0, .25, -56); sceneGroups.card.add(bookPage);
+          const bookHinge = new THREE.Group();
+          bookHinge.position.set(-1.16, .29, -56); sceneGroups.card.add(bookHinge);
+          const bookCover = roundedBox(bookHinge, 1.16, .09, 1.5, .07, teal, { x: .58, y: 0, z: 0 });
+          bookCover.castShadow = true;
+          const bookInset = new THREE.Mesh(new THREE.BoxGeometry(.86, .018, 1.18), mint);
+          bookInset.position.set(.58, .06, 0); bookHinge.add(bookInset);
+          const bookSeal = new THREE.Mesh(new THREE.TorusGeometry(.2, .018, 8, 48), ceramic);
+          bookSeal.position.set(.58, .075, -.34); bookHinge.add(bookSeal);
+          sceneGroups.card.userData.hinge = bookHinge;
+
+          sceneGroups.arch = new THREE.Group(); scene.add(sceneGroups.arch);
+          const archTeeth = [];
+          const archSeeds = [];
+          let randomSeed = 314159;
+          const seeded = () => { randomSeed = (randomSeed * 16807) % 2147483647; return (randomSeed - 1) / 2147483646; };
+          const archPoints = [];
+          for (let i = 0; i < 16; i++) {
+            const t = (i / 15 - .5) * Math.PI;
+            const x = 6.1 * Math.sin(t);
+            const z = -83 + 3.5 * Math.cos(t);
+            const scale = .68 + .23 * Math.cos(t);
+            const start = { x: (seeded() - .5) * 15, y: .06, z: -83 + (seeded() - .5) * 10 };
+            const form = tooth(sceneGroups.arch, start, scale, (seeded() - .5) * .5, i % 4 === 0 ? porcelainSoft : ceramic);
+            archTeeth.push(form);
+            archSeeds.push({ start, target: { x, y: .02, z }, rotation: -t * .55 });
+            archPoints.push(new THREE.Vector3(x, .22, z));
+          }
+          const smileCurve = new THREE.CatmullRomCurve3(archPoints);
+          const smileLight = new THREE.Mesh(new THREE.TubeGeometry(smileCurve, 120, .028, 8, false), teal.clone());
+          sceneGroups.arch.add(smileLight);
+          const movingLight = new THREE.PointLight("#0f5c5c", 0, 4.5, 2);
+          scene.add(movingLight);
+          sceneGroups.arch.userData.teeth = archTeeth;
+          sceneGroups.arch.userData.light = movingLight;
+
+          const signatureFloor = new THREE.Mesh(new THREE.CircleGeometry(13, 96), floorMat);
+          signatureFloor.rotation.x = -Math.PI / 2; signatureFloor.position.set(0, -.1, -83); signatureFloor.receiveShadow = true; sceneGroups.arch.add(signatureFloor);
+
+          const composerEnabled = innerWidth > 900 && !matchMedia("(prefers-reduced-motion: reduce)").matches;
+          if (composerEnabled) {
+            composer = new EffectComposer(renderer);
+            composer.addPass(new RenderPass(scene, camera));
+            bokeh = new BokehPass(scene, camera, { focus: 6, aperture: .000035, maxblur: .006 });
+            composer.addPass(bokeh);
+            composer.addPass(new OutputPass());
+          }
+
+          const shots = [
+            { p: [2.5, 1.5, 4.8], t: [0, .45, 0], focus: 5.1, name: "push-in" },
+            { p: [1.9, 1.2, 3.7], t: [0, .45, 0], focus: 4.3, name: "rack-focus" },
+            { p: [-7.5, 4.1, -11.2], t: [0, 1, -19], focus: 9, name: "dolly" },
+            { p: [0, 10.5, -30], t: [0, .2, -39], focus: 11, name: "crane" },
+            { p: [1.9, 3.1, -48.5], t: [0, .45, -56], focus: 8.5, name: "push-in" },
+            { p: [0, 23, -83], t: [0, 0, -83], focus: 23, name: "crane" },
+            { p: [0, 22, -83], t: [0, .1, -83], focus: 22, name: "settle" }
+          ];
+          const scratchPos = new THREE.Vector3();
+          const scratchTarget = new THREE.Vector3();
+          function applyProgress(progress) {
+            const value = Math.max(0, Math.min(.999999, progress)) * 6;
+            const index = Math.floor(value);
+            const local = smoothstep(value - index);
+            const a = shots[index], b = shots[Math.min(index + 1, shots.length - 1)];
+            camera.position.set(
+              THREE.MathUtils.lerp(a.p[0], b.p[0], local),
+              THREE.MathUtils.lerp(a.p[1], b.p[1], local),
+              THREE.MathUtils.lerp(a.p[2], b.p[2], local)
+            );
+            scratchTarget.set(
+              THREE.MathUtils.lerp(a.t[0], b.t[0], local),
+              THREE.MathUtils.lerp(a.t[1], b.t[1], local),
+              THREE.MathUtils.lerp(a.t[2], b.t[2], local)
+            );
+            camera.lookAt(scratchTarget);
+            const shot = Math.min(5, Math.floor(progress * 6));
+            setChapter(shot);
+            if (bokeh) {
+              bokeh.uniforms.focus.value = THREE.MathUtils.lerp(a.focus, b.focus, local);
+              bokeh.uniforms.aperture.value = (shot === 0 || shot === 3) ? .000035 : .000001;
+            }
+            const bookOpen = spring(Math.max(0, (progress - .51) * 7));
+            const hinge = sceneGroups.card.userData.hinge;
+            hinge.rotation.z = -1.35 * (1 - Math.min(1, bookOpen));
+            const archProgress = smoothstep((progress - .69) / .2);
+            archTeeth.forEach((form, i) => {
+              const seed = archSeeds[i];
+              const local = Math.min(1, spring(archProgress * 2.2 - i * .018));
+              form.position.set(
+                THREE.MathUtils.lerp(seed.start.x, seed.target.x, local),
+                THREE.MathUtils.lerp(seed.start.y, seed.target.y, local) + Math.sin(local * Math.PI) * .38,
+                THREE.MathUtils.lerp(seed.start.z, seed.target.z, local)
+              );
+              form.rotation.z = THREE.MathUtils.lerp((i % 2 ? .18 : -.18), seed.rotation, local);
+            });
+            smileLight.material.transparent = true;
+            smileLight.material.opacity = archProgress;
+            const lightProgress = Math.max(0, Math.min(.999, (progress - .86) / .14));
+            const point = smileCurve.getPointAt(lightProgress);
+            movingLight.position.copy(point);
+            movingLight.intensity = archProgress * 2;
+            const wave = progress * 18;
+            galleryCards.forEach((card, i) => {
+              const pulse = Math.exp(-Math.pow((i - wave) / 1.5, 2));
+              card.rotation.z = .025 * pulse;
+              card.position.y = 1.15 + .09 * pulse;
+            });
+            if (composer) composer.render();
+            else renderer.render(scene, camera);
+          }
+
+          let visible = true;
+          const resize = () => {
+            if (!renderer) return;
+            camera.aspect = innerWidth / innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.5));
+            renderer.setSize(innerWidth, innerHeight, false);
+            if (composer) composer.setSize(innerWidth, innerHeight);
+          };
+          addEventListener("resize", resize, { passive: true });
+          let framePending = false;
+          const animate = () => {
+            framePending = false;
+            if (disposed || !active || !visible || renderMode) return;
+            applyProgress(getProgress());
+            framePending = true;
+            requestAnimationFrame(animate);
+          };
+          const wake = () => { if (!framePending && active && visible && !renderMode) animate(); };
+          document.addEventListener("visibilitychange", () => { active = !document.hidden; wake(); });
+          const visibilityObserver = new IntersectionObserver((entries) => {
+            visible = entries[0].isIntersecting;
+            wake();
+          }, { threshold: 0 });
+          visibilityObserver.observe(stage);
+          window.renderFrame = (seconds) => {
+            renderProgress = Math.max(0, Math.min(1, Number(seconds) / 20));
+            applyProgress(renderProgress);
+            return renderProgress;
+          };
+          if (renderMode) {
+            stage.classList.add("render-mode");
+            window.renderFrame(Number(new URLSearchParams(location.search).get("t") || 0));
+          } else {
+            animate();
+            addEventListener("scroll", () => { if (active && visible) applyProgress(getProgress()); }, { passive: true });
+          }
+          addEventListener("pagehide", () => {
+            disposed = true;
+            visibilityObserver.disconnect();
+            composer?.dispose();
+            const geometries = new Set();
+            const materials = new Set();
+            scene.traverse((object) => {
+              if (object.geometry && !geometries.has(object.geometry)) {
+                geometries.add(object.geometry);
+                object.geometry.dispose();
+              }
+              const objectMaterials = Array.isArray(object.material) ? object.material : [object.material];
+              objectMaterials.forEach((material) => {
+                if (material && !materials.has(material)) {
+                  materials.add(material);
+                  material.dispose();
+                }
+              });
+            });
+            roomTarget?.dispose();
+            renderer?.dispose();
+          }, { once: true });
+        } catch (error) {
+          console.error("The 3D scene could not be initialized; showing the static poster instead.", error);
+          stage.classList.add("static");
+        }
+      }
+      initializeWorld();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f4">
+  <title>Dental Hospital CRM</title>
+  <link rel="stylesheet" href="/static/crm.css">
+</head>
+<body>
+  <div id="login-view" class="login-view" hidden>
+    <form id="login-form" class="login-card">
+      <a class="brand" href="/" aria-label="Clinic CRM"><span class="brand-mark">+</span><span id="login-clinic">Dental care</span></a>
+      <p class="eyebrow">STAFF WORKSPACE</p>
+      <h1>Welcome back</h1>
+      <p class="muted">Sign in to manage patient requests and appointments.</p>
+      <label for="login-email">Work email</label>
+      <input id="login-email" name="email" type="email" autocomplete="username" required>
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+      <p id="login-error" class="form-error" role="alert" hidden></p>
+      <button class="button primary full" type="submit">Sign in</button>
+      <p class="login-foot muted">For authorised clinic staff only.</p>
+    </form>
+  </div>
+
+  <div id="app-view" class="app-shell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/" aria-label="CRM home"><span class="brand-mark">+</span><span id="clinic-name">Dental care</span></a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="today"><span aria-hidden="true">▦</span> Today</button>
+        <button class="nav-item" data-page="requests"><span aria-hidden="true">◷</span> Requests <span id="request-count" class="nav-count">0</span></button>
+        <button class="nav-item" data-page="patients"><span aria-hidden="true">♙</span> Patients</button>
+        <button class="nav-item" data-page="calendar"><span aria-hidden="true">▣</span> Calendar</button>
+        <button class="nav-item" data-page="billing"><span aria-hidden="true">▤</span> Billing</button>
+        <button class="nav-item" data-page="simulator"><span aria-hidden="true">◉</span> Bot simulator</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="user-avatar" id="user-avatar">U</div>
+        <div class="user-label"><b id="user-name">Clinic staff</b><small id="user-role">Staff</small></div>
+        <button id="logout-button" class="icon-button" aria-label="Sign out" title="Sign out">↗</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="mobile-nav" class="icon-button mobile-nav" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <div class="heading-copy"><p id="page-eyebrow" class="eyebrow">YOUR CLINIC</p><h1 id="page-title">Today</h1></div>
+        <form id="global-search-form" class="global-search" role="search">
+          <label class="sr-only" for="global-search">Search by patient name or mobile number</label>
+          <span aria-hidden="true">⌕</span>
+          <input id="global-search" autocomplete="off" placeholder="Search name or mobile number">
+          <button type="submit">Search</button>
+        </form>
+        <div class="live-status"><span class="live-dot"></span><span>Live</span></div>
+        <button id="theme-toggle" class="icon-button" aria-label="Switch to dark mode" title="Toggle dark mode">◐</button>
+      </header>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <section id="page-content" class="page-content" tabindex="-1"></section>
+    </main>
+  </div>
+  <div id="dialog-root"></div>
+  <script src="/static/crm.js" defer></script>
+</body>
+</html>
