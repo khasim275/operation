@@ -1,4 +1,4 @@
-# Dental Hospital CRM
+# operation — Dental Hospital CRM
 
 A local-first dental clinic CRM built with FastAPI, PostgreSQL 16+, psycopg 3, React 18, Vite, TypeScript, and Tailwind CSS. It includes a staff workspace, appointment-request bot, OTP verification, call handling, patient history, billing, file uploads, PostgreSQL live updates, and a local bot simulator.
 
